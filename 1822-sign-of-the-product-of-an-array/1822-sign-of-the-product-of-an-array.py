@@ -2,6 +2,7 @@ class Solution:
     def arraySign(self, nums: List[int]) -> int:
         if 0 in nums:
             return 0
+        # To avoide overflow
         for i in nums:
             if i < 0:
                 i = -1
